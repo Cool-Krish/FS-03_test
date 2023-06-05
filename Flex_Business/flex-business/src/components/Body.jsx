@@ -1,4 +1,8 @@
 import './style.css'
+import award from '../Icons/trophy.png'
+import ideation from '../Icons/ideation.png'
+import sold from '../Icons/sport-car.png'
+import twiter from '../Icons/twitter.png'
 
 function MainBody(){
 
@@ -32,6 +36,28 @@ function MainBody(){
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet impedit voluptatem cupiditate debitis temporibus quasi<br/>
                  doloremque corporis esse atque optio repudiandae, </p>
                   <a href="#">Read More</a>
+            </div>
+        </div>
+        <div className="Info">
+            <div className="subInfo">
+                <img src= {award} className='infologo' alt="" srcset="" />
+                <h1 style={{fontSize: '40px'}}>22</h1>
+                <p style={{fontSize: '20px'}}>Aword wining</p>
+            </div>
+            <div className="subInfo">
+                <img src={ideation} className='infologo' alt="" srcset="" />
+                <h1 style={{fontSize: '40px'}}>145</h1>
+                <p style={{fontSize: '20px'}}>Finished Projects</p>
+            </div>
+            <div className="subInfo">
+                <img src={sold} className='infologo' alt="" srcset="" />
+                <h1 style={{fontSize: '40px'}}>349</h1>
+                <p style={{fontSize: '20px'}}>Products Sold</p>
+            </div>
+            <div className="subInfo">
+                <img src={twiter} className='infologo' alt="" srcset="" />
+                <h1 style={{fontSize: '40px'}}>2456</h1>
+                <p style={{fontSize: '20px'}}>Twitter Fans</p>
             </div>
         </div>
     </>
