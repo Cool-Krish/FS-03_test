@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    padding: 15px;
+    justify-content:space-between;
+}
+.Logo{
+    
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:baseline;
+}
+.menu{
+    border-radius: 0 50% 0 50%;
+    color: black;
+    height: 70%;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.menu:hover{
+    background-color: antiquewhite;
+}
+.card{
+    width: 30%;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 2px 5px 5px red;
+}
+
+
+.kk{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.heading{
+    color: green;
+    float: left;
+    margin-left: -20%;
+}
+
+.container{
+    width: 100%;
+    height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80);
+    background-size: cover;
+    color: rgb(8, 12, 12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Read{
+    height: 50px;
+    width: 130px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(70,121,194);
+    color: white;
+    font-weight: bold;
+}
+
+.feature{
+    margin: 25px;
+}
+
+.Features{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sublogo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.subFeatures{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: rgb(70,121,194);
+}
+.Info{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://wallpapercave.com/wp/wp2019283.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: antiquewhite;
+    margin-top: 35px;
+}
+.infologo{
+    height: 100px;
+    width: 100px;
+}
+
+.subInfo{
+    height: 90%;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer{
+    height: 450px;
+    width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.cc{
+    height: 60%;
+    width: 25%;
+}
+.cc h1 {
+    font-size: 25px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    justify-content: space-evenly;
+}
+.imgs{
+    height: 100px;
+    width: 100px;
+}
+.post div {
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+}
+.about div{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+}
+
+.gallery div{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+}
