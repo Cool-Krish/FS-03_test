@@ -1,0 +1,21 @@
+.Radio{
+    margin-left: 40%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+thead{
+    height: 50px;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    background-color:rgb(48, 47, 47);
+    color: aliceblue;
+    cursor: pointer;
+}
