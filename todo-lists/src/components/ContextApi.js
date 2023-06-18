@@ -15,6 +15,9 @@ export function CustomProvider(){
       isDone: false
     }
   ]);
+  
+  const [currentTodo, setCurrentTodo] = useState({});
+  const [isEditing, setIsEditing] = useState(false);
 
   const addTodo = text => {
     let id = todos.length+1
@@ -33,7 +36,29 @@ export function CustomProvider(){
     newTodos.splice(index, 1);
     setTodos(newTodos);
   };
-  return (<ContextApi.Provider value={{addTodo, todos, setTodos, markTodo, removeTodo}}>
+  function handleEditInputChange(e) {
+    setCurrentTodo({ ...currentTodo, text: e.target.value });
+    console.log(currentTodo);
+  }
+  function handleEditFormSubmit(e) {
+    e.preventDefault();
+
+    handleUpdateTodo(currentTodo.id, currentTodo);
+  }
+
+  function handleUpdateTodo(id, updatedTodo) {
+    const updatedItem = todos.map((todo) => {
+      return todo.id === id ? updatedTodo : todo;
+    });
+    setIsEditing(false);
+    setTodos(updatedItem);
+  }
+
+  function handleEditClick(todo) {
+    setIsEditing(true);
+    setCurrentTodo({ ...todo });
+  }
+  return (<ContextApi.Provider value={{addTodo, todos, setTodos, markTodo, removeTodo,isEditing, handleEditFormSubmit, currentTodo, handleEditInputChange,setIsEditing, handleEditClick}}>
        <App/>
   </ContextApi.Provider>)
 }
